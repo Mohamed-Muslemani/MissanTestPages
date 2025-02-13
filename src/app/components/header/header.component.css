@@ -1,0 +1,31 @@
+/*.navbar-nav .nav-link {*/
+/*  color: white !important;*/
+/*  font-size: 1.2rem;*/
+/*  font-weight: bold;*/
+/*  text-transform: uppercase;*/
+/*}*/
+/*.navbar-nav .nav-link:hover {*/
+/*  text-decoration: underline;*/
+/*}*/
+/*.logo {*/
+/*  max-height: 80px;*/
+/*}*/
+/*.hero {*/
+/*  position: relative;*/
+/*  text-align: center;*/
+/*  color: white;*/
+/*}*/
+/*.hero img {*/
+/*  width: 100%;*/
+/*  height: auto;*/
+/*}*/
+/*.hero-text {*/
+/*  position: absolute;*/
+/*  bottom: 10%;*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*  background: rgba(0, 0, 0, 0.7);*/
+/*  padding: 15px 30px;*/
+/*  font-size: 1.5rem;*/
+/*  font-weight: bold;*/
+/*}*/
