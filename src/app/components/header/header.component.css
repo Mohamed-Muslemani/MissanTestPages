@@ -1,31 +1,50 @@
-/*.navbar-nav .nav-link {*/
-/*  color: white !important;*/
-/*  font-size: 1.2rem;*/
-/*  font-weight: bold;*/
-/*  text-transform: uppercase;*/
-/*}*/
-/*.navbar-nav .nav-link:hover {*/
-/*  text-decoration: underline;*/
-/*}*/
-/*.logo {*/
-/*  max-height: 80px;*/
-/*}*/
-/*.hero {*/
-/*  position: relative;*/
-/*  text-align: center;*/
-/*  color: white;*/
-/*}*/
-/*.hero img {*/
-/*  width: 100%;*/
-/*  height: auto;*/
-/*}*/
-/*.hero-text {*/
-/*  position: absolute;*/
-/*  bottom: 10%;*/
-/*  left: 50%;*/
-/*  transform: translateX(-50%);*/
-/*  background: rgba(0, 0, 0, 0.7);*/
-/*  padding: 15px 30px;*/
-/*  font-size: 1.5rem;*/
-/*  font-weight: bold;*/
-/*}*/
+.hero {
+  position: relative;
+  background: url('../../../assets/images/header-background-image.jpeg') no-repeat center center/cover;
+  height: 80vh;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
+}
+
+.navbar {
+  position: absolute; /* Position the navbar absolutely */
+  top: 10px; /* Adjust as needed for vertical spacing */
+  right: 100px; /* Adjust as needed for horizontal spacing */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.nav-link {
+  color: white; /* Change link color if needed */
+}
+.navbar-nav {
+  display: flex; /* Make the navbar items flex containers */
+  justify-content: space-between; /* Distribute space evenly */
+  width: 100%; /* Use the full width of the navbar */
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 180px;
+  padding: 10px;
+}
+.content-box {
+  position: absolute;
+  top: 90%;
+  right: 0px;
+  background: #1E2A38;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}

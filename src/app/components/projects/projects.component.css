@@ -1,0 +1,38 @@
+.about-section {
+  position: relative;
+  padding: 50px 0;
+  background: #f8f9fa;
+  clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%); /* Create a vertical slope with a sline shape */
+}
+
+.row {
+  display: flex; /* Use flexbox for the row */
+  width: 100%;
+}
+
+.left-side-content {
+  position: relative;
+  width: 50%; /* Set width to 50% */
+}
+
+.left-side-content img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+}
+
+.right-side-content {
+  position: relative; /* Make it a positioning context for the pseudo-element */
+  display: flex; /* Ensure the right side is also a flex container */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align items at the start */
+  padding: 20px; /* Add padding for spacing */
+  width: 50%; /* Set width to 50% */
+}
+
+.view-more {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: auto; /* Push the link to the bottom */
+  z-index: 2; /* Ensure link is on top */
+}
