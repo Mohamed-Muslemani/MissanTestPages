@@ -1,38 +1,46 @@
-.about-section {
-  position: relative;
-  padding: 50px 0;
-  background: #f8f9fa;
-  clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%); /* Create a vertical slope with a sline shape */
-}
 
-.row {
-  display: flex; /* Use flexbox for the row */
+.about-section {
+  display: flex;
+  align-items: stretch;
   width: 100%;
+  position: relative;
+  background-color: #f8f9fc;
+  overflow: hidden;
 }
 
 .left-side-content {
+  flex: 1;
   position: relative;
-  width: 50%; /* Set width to 50% */
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 }
 
 .left-side-content img {
-  width: 100%; /* Make image responsive */
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .right-side-content {
-  position: relative; /* Make it a positioning context for the pseudo-element */
-  display: flex; /* Ensure the right side is also a flex container */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: flex-start; /* Align items at the start */
-  padding: 20px; /* Add padding for spacing */
-  width: 50%; /* Set width to 50% */
+  flex: 1; /* Takes up the remaining space */
+  background-color: #f8f9fc;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Distributes content evenly */
 }
 
-.view-more {
-  text-decoration: none;
-  font-weight: bold;
-  color: #007bff;
-  margin-top: auto; /* Push the link to the bottom */
-  z-index: 2; /* Ensure link is on top */
+.slanted-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #102c57;
+  transform: skewX(-20deg);
+  z-index: 3;
 }
+
