@@ -28,9 +28,10 @@
   display: flex; /* Make the navbar items flex containers */
   justify-content: space-between; /* Distribute space evenly */
   width: 100%; /* Use the full width of the navbar */
-}
-.navbar-list {
   list-style-type: none;
+}
+li a{
+  text-decoration: none;
 }
 
 .logo {

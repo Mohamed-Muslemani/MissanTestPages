@@ -1,0 +1,19 @@
+
+
+
+
+
+
+<div class="services">
+  <div class="service" *ngFor="let service of services" (click)="selectService(service.id)">
+    <h3>{{ service.name }}</h3>
+  </div>
+</div>
+<div class="selected-service">
+  <div class="image">
+    <img *ngIf="selectedService" [src]="selectedService.image" alt="Selected Service Image">
+  </div>
+  <div class="description">
+    <p *ngIf="selectedService">{{ selectedService.description }}</p>
+  </div>
+</div>
