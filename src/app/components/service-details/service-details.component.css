@@ -1,25 +1,92 @@
-.services {
+/* More Services Section Styling */
+h3.mt-5 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Flexbox Layout for the Row */
+.row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-}
-
-.service {
-  margin: 10px;
-  cursor: pointer;
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.selected-service {
   margin-top: 20px;
 }
 
-.image img {
+/* Service Text and Description */
+.service-text,
+.service-description {
+  text-align: left;
+}
+
+/* View More Link Styling */
+.view-more {
+  display: inline-block;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.view-more:hover {
+  color: #0056b3;
+}
+
+/* Image Styling */
+.text-center img {
   max-width: 100%;
   height: auto;
 }
 
-.description {
+/* Spacing between services */
+.row {
+  margin-bottom: 40px;
+}
+
+/* Alternating Layout: Right-side image, left-side text */
+.row.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* General styling for columns */
+.row .col-md-6 {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+}
+
+.row .col-md-6 img {
+  max-width: 100%;
+}
+
+.row .col-md-6 .service-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.row .col-md-6 .service-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.row .col-md-6 .view-more {
   margin-top: 10px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 767px) {
+  .col-md-6 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row.flex-row-reverse {
+    flex-direction: column-reverse;
+  }
 }

@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { NgForOf, NgIf } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { NgClass, NgForOf, NgIf, SlicePipe } from '@angular/common';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-service-details',
   imports: [
     NgIf,
-    NgForOf
+    NgForOf,
+    RouterLink,
+    SlicePipe,
+    NgClass
   ],
   templateUrl: './service-details.component.html',
   standalone: true,
-  styleUrl: './service-details.component.css'
+  styleUrls: ['./service-details.component.css']
 })
 export class ServiceDetailsComponent implements OnInit {
   private servicesData = [
@@ -53,7 +56,8 @@ export class ServiceDetailsComponent implements OnInit {
   services = this.servicesData;
   selectedService: any = null;
 
-  constructor(private route: ActivatedRoute) {}
+  // Inject ChangeDetectorRef
+  constructor(private route: ActivatedRoute, private cdRef: ChangeDetectorRef) {}
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
@@ -62,5 +66,15 @@ export class ServiceDetailsComponent implements OnInit {
 
   selectService(id: number): void {
     this.selectedService = this.services.find(service => service.id === id);
+    // Trigger change detection to ensure the layout updates
+    this.cdRef.detectChanges();
   }
+
+  getEffectiveIndex(service: any): number {
+    // Filter out the selected service
+    const visibleServices = this.services.filter(s => s.id !== this.selectedService?.id);
+    // Return the index of the current service in the filtered array
+    return visibleServices.findIndex(s => s.id === service.id);
+  }
+
 }

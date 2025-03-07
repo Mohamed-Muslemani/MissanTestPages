@@ -1,4 +1,4 @@
-.services-section {
+.services-section1 {
   padding: 50px;
   text-align: center;
 }
@@ -62,77 +62,3 @@
 }
 
 
-
-/*!* General Section Styling *!*/
-/*.services-section1, .services-section2, .services-section3 {*/
-/*  padding: 50px;*/
-/*  text-align: center;*/
-/*}*/
-
-/*!* Title Styling *!*/
-/*.section-title {*/
-/*  font-size: 2rem;*/
-/*  font-weight: bold;*/
-/*}*/
-
-/*!* Underline Below Title *!*/
-/*.title-underline {*/
-/*  width: 80px;*/
-/*  height: 4px;*/
-/*  background-color: #EDCB62;*/
-/*  margin: 10px auto;*/
-/*}*/
-
-/*!* Row and Columns *!*/
-/*.row {*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-
-/*}*/
-
-/*!* Left Side - Text *!*/
-/*.service-text,*/
-/*.service-description {*/
-/*  text-align: left;*/
-/*}*/
-
-
-/*.right-side-text{*/
-/*  text-align: left;*/
-/*  padding-left: 50px;*/
-/*}*/
-
-/*.view-more {*/
-/*  display: inline-block;*/
-/*  margin-top: 10px;*/
-
-/*  text-align: left;*/
-/*}*/
-
-/*!* Ensure View More is Aligned Left *!*/
-/*.col-md-6 {*/
-/*  text-align: left;*/
-/*}*/
-
-/*!* Right Side - Image *!*/
-/*.text-center img {*/
-/*  max-width: 100%;*/
-/*  height: auto;*/
-/*}*/
-
-/*!* Responsive Design *!*/
-/*@media (max-width: 768px) {*/
-/*  .row {*/
-/*    flex-direction: column;*/
-/*  }*/
-
-/*  .col-md-6 {*/
-/*    width: 100%;*/
-/*    text-align: center;*/
-/*  }*/
-
-/*  !* Keep text & button left-aligned on small screens *!*/
-/*  .col-md-6:first-child {*/
-/*    text-align: left;*/
-/*  }*/
-/*}*/
