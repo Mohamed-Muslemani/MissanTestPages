@@ -1,4 +1,10 @@
 /* More Services Section Styling */
+.service-details{
+  width: 80%;
+  margin: auto;
+}
+
+
 h3.mt-5 {
   font-size: 2rem;
   font-weight: bold;
