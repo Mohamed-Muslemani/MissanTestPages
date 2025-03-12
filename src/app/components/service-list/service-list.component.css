@@ -66,9 +66,19 @@ h2 {
     flex-direction: column !important;
     gap: 1.5rem; /* Adjust spacing for small screens */
   }
+  .reverse-layout {
+    flex-direction: column; /* Ensures alternate layouts */
+  }
+
+  /* Force image to be on top */
+  .service-img-content {
+    margin-top: 5px;
+    order: -1; /* Moves image above text */
+  }
+
 
   .service-text-content {
-    text-align: center;
+    text-align: left;
   }
 
   .service-img {

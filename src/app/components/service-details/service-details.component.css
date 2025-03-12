@@ -1,10 +1,20 @@
-/* More Services Section Styling */
-.service-details{
-  width: 80%;
+.service-details {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+}
+.selected-service-img{
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+.selected-service-img img {
+  display: block;
+  width: 100%; /* Ensures the image scales down without distortion */
   margin: auto;
 }
 
-
+/* Heading Styles */
 h3.mt-5 {
   font-size: 2rem;
   font-weight: bold;
@@ -14,23 +24,33 @@ h3.mt-5 {
 /* Flexbox Layout for the Row */
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
+.service-text-content, .service-img-content {
+  flex: 1; /* Allows flexible scaling instead of fixed width */
+}
 /* Service Text and Description */
 .service-text,
 .service-description {
   text-align: left;
 }
 
+/* Adjust selected service description width */
+.col-lg-8 {
+  max-width: 75%;
+  margin: auto;
+}
+
+.col-md-10 {
+  max-width: 85%;
+}
+
 /* View More Link Styling */
 .view-more {
   display: inline-block;
   margin-top: 10px;
-  text-align: left;
-  width: 100%;
   font-weight: bold;
   text-decoration: none;
   color: #007bff;
@@ -40,11 +60,13 @@ h3.mt-5 {
   color: #0056b3;
 }
 
-/* Image Styling */
-.text-center img {
+.service-img {
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: auto;
 }
+
 
 /* Spacing between services */
 .row {
@@ -56,34 +78,26 @@ h3.mt-5 {
   flex-direction: row-reverse;
 }
 
+
 /* General styling for columns */
-.row .col-md-6 {
+.row .col-lg-6 {
   flex: 0 0 48%;
   margin-bottom: 20px;
 }
 
-.row .col-md-6 img {
-  max-width: 100%;
+@media (max-width: 911px) {
+  .col-lg-8 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
-.row .col-md-6 .service-text {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.row .col-md-6 .service-description {
-  font-size: 1rem;
-  color: #666;
-}
-
-.row .col-md-6 .view-more {
-  margin-top: 10px;
-}
 
 /* Responsive Design for Mobile */
 @media (max-width: 767px) {
-  .col-md-6 {
+  .col-lg-6,
+  .col-md-7,
+  .col-md-5 {
     width: 100%;
     text-align: center;
   }
@@ -93,6 +107,28 @@ h3.mt-5 {
   }
 
   .row.flex-row-reverse {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  /* Force image to be on top */
+  .service-img-content {
+    order: -1; /* Moves image above text */
+  }
+
+  /* Ensure text is centered */
+  .service-text-content {
+    text-align: left;
+  }
+
+  /* Ensure images scale correctly */
+  .service-img {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  /* Center align text */
+  .service-text,
+  .service-description {
+    text-align: left;
   }
 }
