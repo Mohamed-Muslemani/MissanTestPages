@@ -1,9 +1,7 @@
 .services-section1 {
-/*  !*padding: 50px;*!*/
-/*  text-align: center;*/
-  width: 80%;
+  width: 90%; /* Make it more adaptive */
+  max-width: 1200px; /* Prevents extreme stretching */
   margin: auto;
-  /*border: 1px solid black;*/
 }
 
 h2 {
@@ -16,41 +14,42 @@ h2 {
 }
 
 .title-underline {
-  width: 80px;
-  height: 4px;
+  width: 5rem;
+  height: 0.3rem;
   background-color: #EDCB62;
-  margin: 10px auto;
+  margin: 0.5rem auto;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  margin-bottom: 30px; /* Avoid cumulative margin on each iteration */
+  align-items: center;
+  gap: 2rem; /* Provides spacing instead of fixed margins */
+  margin-bottom: 3rem; /* Space between service sections */
 }
-.service-text-content, .service-img-content{
-  width: 50%;
-  /*border: 3px solid red;*/
+
+.service-text-content, .service-img-content {
+  flex: 1; /* Allows flexible scaling instead of fixed width */
 }
+
 .service-text-content {
   text-align: left;
-  /*padding-left: 20px; !* Padding only for text content *!*/
 }
 
 .view-more {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .service-img {
-  width: 400px;
-  height: 250px;
-
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 
 .reverse-layout {
-  flex-direction: row-reverse; /* Swap layout for even-indexed services */
-
+  flex-direction: row-reverse; /* Ensures alternate layouts */
 }
 
 .service-img-content {
@@ -61,20 +60,18 @@ h2 {
   text-align: left;
 }
 
+/* 🌟 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column !important;
+    gap: 1.5rem; /* Adjust spacing for small screens */
+  }
 
-/*!*@media (max-width: 768px) {*!*/
-/*!*  .row {*!*/
-/*!*    flex-direction: column !important;*!*/
-/*!*    margin-bottom: 30px; !* Maintain space between services in column layout *!*!*/
-/*!*  }*!*/
+  .service-text-content {
+    text-align: center;
+  }
 
-/*!*  .service-text-content {*!*/
-/*!*    text-align: center;*!*/
-/*!*    padding-left: 0; !* Reset padding for small screens *!*!*/
-/*!*  }*!*/
-
-/*!*  .service-img {*!*/
-/*!*    width: 100%;*!*/
-/*!*    height: auto;*!*/
-/*!*  }*!*/
-/*!*}*!*/
+  .service-img {
+    max-width: 100%;
+  }
+}

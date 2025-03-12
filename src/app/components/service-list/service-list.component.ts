@@ -32,4 +32,5 @@ export class ServiceListComponent implements OnInit {
   }
 
 
+  protected readonly servicesSummary = SERVICES_SUMMARY;
 }

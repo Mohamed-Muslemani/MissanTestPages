@@ -20,12 +20,16 @@ export class ServiceDetailsComponent implements OnInit {
   servicesSummary = SERVICES_SUMMARY; // For "More Services" section
   servicesDetails = SERVICES_DETAILS; // For detailed service description
   selectedService: any = null;
+  filteredServices: any[] = [];
 
   constructor(private route: ActivatedRoute, private cdRef: ChangeDetectorRef, private router: Router) {}
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.selectedService = this.servicesDetails.find(service => service.id === id);
+
+    // Filter services to exclude the selected one
+    this.filteredServices = this.servicesSummary.filter(service => service.id !== id);
   }
 
   getEffectiveIndex(service: any): number {
