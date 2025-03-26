@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import {Component, ViewChild, ElementRef, AfterViewInit, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './loader.component.scss'
 })
 export class LoaderComponent implements AfterViewInit {
+  @Input() isLoading: boolean = false; // Controls loader visibility
   @ViewChild('loader', { static: false }) loader!: ElementRef;
 
   tiles = Array(5).fill(0); // Creates an array with 5 elements for the tiles
