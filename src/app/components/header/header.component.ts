@@ -1,9 +1,16 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
+import {MatToolbar} from '@angular/material/toolbar';
+import {MatIcon} from '@angular/material/icon';
+import {MatSidenav, MatSidenavContainer} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-header',
   imports: [
+    MatToolbar,
+    MatIcon,
+    MatSidenavContainer,
+    MatSidenav
   ],
   templateUrl: './header.component.html',
   standalone: true,
@@ -17,6 +24,12 @@ export class HeaderComponent {
     } else {
       console.error("Menu element not found.");
     }
+  }
+
+  @ViewChild('sidenav') sidenav!: MatSidenav;  // Reference the sidenav
+
+  closeSidenav() {
+    this.sidenav.close(); // Closes the sidebar when called
   }
 
 }
