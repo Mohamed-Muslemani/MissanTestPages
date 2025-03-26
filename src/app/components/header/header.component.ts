@@ -10,5 +10,13 @@ import {NgOptimizedImage} from '@angular/common';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  toggleMenu(): void {
+    const menu = document.getElementById("menu");
+    if (menu) {
+      menu.classList.toggle("show");
+    } else {
+      console.error("Menu element not found.");
+    }
+  }
 
 }

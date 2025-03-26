@@ -2,7 +2,9 @@
   position: relative;
   background: url('../../../assets/images/header-background-image.jpeg') no-repeat center center/cover;
   height: 80vh;
+  width: 100%;
   color: white;
+  margin: 0;
 }
 
 .overlay {
@@ -24,13 +26,15 @@
 .nav-link {
   color: white; /* Change link color if needed */
 }
+
 .navbar-nav {
   display: flex; /* Make the navbar items flex containers */
   justify-content: space-between; /* Distribute space evenly */
   width: 100%; /* Use the full width of the navbar */
   list-style-type: none;
 }
-li a{
+
+li a {
   text-decoration: none;
 }
 
@@ -41,14 +45,51 @@ li a{
   width: 180px;
   padding: 10px;
 }
+
 .content-box {
   position: absolute;
-  top: 90%;
-  right: 0px;
+  bottom: -2em; /* Align to the bottom of the hero section */
+  right: 0; /* Align to the right side */
   background: #1E2A38;
-  padding: 20px;
+  padding: 2em;
   color: white;
   text-align: center;
-  width: 100%;
-  max-width: 900px;
+  width: 85%; /* Adjust width as per requirement */
+  max-width: 85%;
+}
+
+@media (max-width: 564px) {
+  .content-box {
+    padding: 1em;
+    width: 80%; /* Adjust width as per requirement */
+    max-width: 80%;
+  }
+
+  .navbar-toggler {
+    display: block; /* Show hamburger menu icon on small screens */
+  }
+
+  .navbar-collapse {
+    display: none; /* Hide the navbar items by default on small screens */
+  }
+
+  .navbar-collapse.collapse.show {
+    display: block; /* Display the navbar items when the menu is toggled */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack navbar items vertically */
+    text-align: center; /* Center the items */
+    width: 100%; /* Full width for the navbar items */
+  }
+
+  .nav-item {
+    margin-bottom: 1em; /* Add space between items */
+  }
+}
+
+@media (max-width: 282px) {
+  h2{
+    font-size: 1em;
+  }
 }
