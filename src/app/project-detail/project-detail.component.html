@@ -1,0 +1,12 @@
+<div class="container mt-5" *ngIf="project">
+  <div class="card">
+    <img [src]="project.img" class="card-img-top" alt="Project Image">
+    <div class="card-body">
+      <h2 class="card-title">{{ project.name }}</h2>
+      <h5 class="card-subtitle mb-2 text-muted">{{ project.category }}</h5>
+      <p class="card-text">{{ project.description }}</p>
+      <a routerLink="/" class="btn btn-primary">Back to Projects</a>
+    </div>
+  </div>
+</div>
+

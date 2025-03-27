@@ -1,2 +1,30 @@
+<<<<<<< HEAD
 
 <router-outlet></router-outlet>
+=======
+<header>
+  <h1>{{ title }}</h1>
+  <nav class="nav-bar">
+    <a routerLink="/project" routerLinkActive="active">Projects</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+  </nav>
+</header>
+
+<main>
+  <!-- Loader (Shows When isLoading is True) -->
+  <app-loader [isLoading]="isLoading"></app-loader>
+
+  <!-- Wrapper for Page Content -->
+  <div class="wrapper" *ngIf="!isLoading">
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+
+
+</main>
+
+
+
+
+>>>>>>> transitionAnimation

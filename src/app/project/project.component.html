@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <!-- Category Filter Dropdown -->
+  <div class="mb-4">
+    <select class="form-select" (change)="filterProjects($event)">
+      <option value="all">All</option>
+      <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
+    </select>
+  </div>
+
+  <!-- Project Cards with Bootstrap's gap system -->
+  <div class="row g-5"> <!-- g-5 is the Bootstrap class for spacing between columns -->
+    <div class="col-md-6" *ngFor="let project of filteredProjects" [routerLink]="['/project',project.id ]">
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img [src]="project.img" alt="Card Image" class="card-img">
+        </div>
+        <div class="info-box">
+          <div class="category">{{ project.category }}</div>
+          <div class="title">{{ project.name }}</div>
+          <p class="description">{{ project.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
