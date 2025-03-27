@@ -1,30 +1,22 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-
-import {RouterOutlet} from '@angular/router';
-
+import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { NgIf } from '@angular/common';
+import { LoaderComponent } from './loader/loader.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    LoaderComponent,
+    NgIf,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   standalone: true,
-  styleUrl: './app.component.css'
-=======
-import {NgIf} from '@angular/common';
-import {NavigationEnd, NavigationStart, Router, RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
-import {LoaderComponent} from './loader/loader.component';
-import {FooterComponent} from './footer/footer.component';
-
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, LoaderComponent, NgIf, FooterComponent],
-  templateUrl: './app.component.html',
-  standalone: true,
   styleUrl: './app.component.scss'
->>>>>>> transitionAnimation
 })
 export class AppComponent {
   title = "MissanGroupWebsite";

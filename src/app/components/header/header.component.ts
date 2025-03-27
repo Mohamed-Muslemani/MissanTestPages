@@ -7,10 +7,7 @@ import {MatSidenav, MatSidenavContainer} from '@angular/material/sidenav';
 @Component({
   selector: 'app-header',
   imports: [
-    MatToolbar,
-    MatIcon,
-    MatSidenavContainer,
-    MatSidenav
+
   ],
   templateUrl: './header.component.html',
   standalone: true,
