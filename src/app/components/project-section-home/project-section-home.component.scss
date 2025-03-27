@@ -1,0 +1,46 @@
+
+.about-section {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  position: relative;
+  background-color: #f8f9fc;
+  overflow: hidden;
+}
+
+.left-side-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+.left-side-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right-side-content {
+  flex: 1; /* Takes up the remaining space */
+  background-color: #f8f9fc;
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Distributes content evenly */
+}
+
+.slanted-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #102c57;
+  transform: skewX(-20deg);
+  z-index: 3;
+}
+
