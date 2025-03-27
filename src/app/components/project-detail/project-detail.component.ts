@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {ActivatedRoute, RouterLink} from '@angular/router';
-import {Project} from '../Shared/Modules/project';
-import {mockProjectData} from '../Shared/Data/mockProject.data';
+import {Project} from '../../Shared/Modules/project';
+import {mockProjectData} from '../../Shared/Data/mockProject.data';
 import {NgIf} from '@angular/common';
 
 @Component({

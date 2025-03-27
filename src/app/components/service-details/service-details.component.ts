@@ -1,8 +1,10 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SERVICES_SUMMARY } from '../../data/services-summary';
-import { SERVICES_DETAILS } from '../../data/services-details';
+import { SERVICES_SUMMARY } from '../../Shared/Data/services-summary';
+import { SERVICES_DETAILS } from '../../Shared/Data/services-details';
 import {NgClass, NgForOf, NgIf} from '@angular/common';
+import {FooterComponent} from '../footer/footer.component';
+import {HeaderComponent} from '../header/header.component';
 
 @Component({
   selector: 'app-service-details',
@@ -11,7 +13,9 @@ import {NgClass, NgForOf, NgIf} from '@angular/common';
   imports: [
     NgClass,
     NgIf,
-    NgForOf
+    NgForOf,
+    FooterComponent,
+    HeaderComponent
   ],
   standalone: true
 })

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {NgClass, NgForOf, NgIf} from '@angular/common';
 import {Router, RouterLink} from '@angular/router';
-import {SERVICES_SUMMARY} from '../../data/services-summary';
+import {SERVICES_SUMMARY} from '../../Shared/Data/services-summary';
 
 @Component({
   selector: 'app-service-list',

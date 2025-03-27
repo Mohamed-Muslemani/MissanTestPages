@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { NgIf } from '@angular/common';
+import {HeaderComponent} from '../header/header.component';
+import {FooterComponent} from '../footer/footer.component';
 
 interface ContactFormData {
   firstName: string;
@@ -16,7 +18,7 @@ interface ContactFormData {
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
   standalone: true,
-  imports: [NgIf, ReactiveFormsModule],
+  imports: [NgIf, ReactiveFormsModule, HeaderComponent, FooterComponent],
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent {

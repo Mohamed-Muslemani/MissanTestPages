@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/router';
+import {RouterOutlet, RouterLink, RouterLinkActive, Router, NavigationStart, NavigationEnd} from '@angular/router';
 import { NgIf } from '@angular/common';
-import { LoaderComponent } from './loader/loader.component';
-import { FooterComponent } from './footer/footer.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
     LoaderComponent,
     NgIf,
-    FooterComponent
   ],
   templateUrl: './app.component.html',
   standalone: true,

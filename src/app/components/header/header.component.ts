@@ -3,10 +3,13 @@ import {NgOptimizedImage} from '@angular/common';
 import {MatToolbar} from '@angular/material/toolbar';
 import {MatIcon} from '@angular/material/icon';
 import {MatSidenav, MatSidenavContainer} from '@angular/material/sidenav';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-header',
   imports: [
+    RouterLink,
+    RouterLinkActive
 
   ],
   templateUrl: './header.component.html',
