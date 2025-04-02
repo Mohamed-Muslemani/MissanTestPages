@@ -3,12 +3,16 @@ import {ActivatedRoute, RouterLink} from '@angular/router';
 import {Project} from '../../Shared/Modules/project';
 import {mockProjectData} from '../../Shared/Data/mockProject.data';
 import {NgIf} from '@angular/common';
+import {FooterComponent} from '../footer/footer.component';
+import {HeaderComponent} from '../header/header.component';
 
 @Component({
   selector: 'app-project-detail',
   imports: [
     RouterLink,
-    NgIf
+    NgIf,
+    FooterComponent,
+    HeaderComponent
   ],
   templateUrl: './project-detail.component.html',
   standalone: true,

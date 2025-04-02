@@ -1,16 +1,54 @@
-.card {
-  max-width: 600px;
-  margin: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
-
-  .card-img-top {
-    height: 300px;
-    object-fit: cover;
-  }
-
-  .card-body {
-    padding: 20px;
-  }
+ body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.details div {
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+ .btn {
+   margin-bottom: 20px; /* Adjust as needed */
+ }
+
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #3f51b5;
+}
+ .project-image {
+   display: block;
+   max-width: 100%; /* Adjust this percentage to control the size */
+   height: auto;
+   margin: 20px auto; /* Centers the image */
+   border-radius: 8px; /* Optional: Adds rounded corners */
+ }
+
