@@ -1,5 +1,37 @@
 import {Project} from '../Modules/project';
 export const mockProjectData: Project[] = [
+
+  {
+    id: 20,
+    name: "Addat Baghdad",
+    category: "Residential",
+    client: "Al Arife Trading Group",
+    size: "1,000,000 m²",
+    budget: "$1,600,000,000",
+    description: "A large-scale residential development covering 1 million square meters. It consists of 1,970 two-floor villas and 25 twenty-floor buildings with a total of 3,000 apartments. The project includes shopping centers, schools, nurseries, mosques, hospitals, and other essential services.",
+    img: "/assets/images/addatBaghdad.jpg"
+  },
+
+  {
+    id: 21,
+    name: "COVID-19 Emergency Hospitals",
+    category: "Industrial",
+    client: "German Clients",
+    size: "",
+    budget: "$4,000,000 ",
+    description: "This project involved the development of two 100-bed hospitals in Iraq, built in response to urgent healthcare needs during the COVID-19 pandemic. The hospitals were constructed in Baghdad and Sleimaniya, each completed under a $2 million contract. The project was part of a national effort to expand medical infrastructure during the pandemic, requiring fast-tracked timelines and efficient coordination.",
+    img: "/assets/images/hospital.jpeg"
+  },
+  {
+    id: 4,
+    name: "Construction of 1 x 3 Story Hard Structure Offices Building",
+    category: "Commercial",
+    client: "UNAMI",
+    size: "",
+    budget: "$6,500,000 ",
+    description: "Construction of a 3-story hard structure accommodation building for UNAMI in the Green Zone, Baghdad. The project included site preparation, excavation, foundation, structural steel work, mechanical and electrical installations, and finishing.",
+    img: "/assets/images/hardStructureBuilding.png"
+  },
   {
     id: 1,
     name: "Construct Ten Presidential Villas, Baghdad",
@@ -13,40 +45,33 @@ export const mockProjectData: Project[] = [
   {
     id: 2,
     name: "Construction of 100 Bed Hospital in Karbala Province",
-    category: "Healthcare",
+    category: "Industrial",
     client: "MOH - Ministry Of Health",
     size: "",
-    budget: "6,000,000,000 IQD",
+    budget: "$4,500,000",
     description: "Missan Company constructed a 100-bed hospital in Karbala Province as a turn-key project, including material supply, manpower, and basic medical equipment.",
     img: "/assets/images/karbalaHospital.png"
   },
-  {
-    id: 4,
-    name: "Construction of 1 x 3 Story Hard Structure Offices Building",
-    category: "Commercial",
-    client: "UNAMI",
-    size: "",
-    budget: "6,500,000 USD",
-    description: "Construction of a 3-story hard structure accommodation building for UNAMI in the Green Zone, Baghdad. The project included site preparation, excavation, foundation, structural steel work, mechanical and electrical installations, and finishing.",
-    img: "/assets/images/hardStructureBuilding.png"
-  },
+
+
+
   {
     id: 3,
     name: "Installation of Water Intake",
     category: "Industrial",
     client: "Al-Rasheed Company and Ministry of Industry",
     size: "",
-    budget: "1,000,000,000 IQD",
+    budget: "$760,000",
     description: "Design and installation of a water intake system for Missan Gas Turbine Station, including mechanical and electrical design for the power station.",
     img: "/assets/images/waterpump.png"
   },
   {
     id: 16,
     name: "Retrofitting of 81 Accommodation Buildings",
-    category: "Infrastructure",
+    category: "Industrial",
     client: "UNAMI",
     size: "",
-    budget: "1,759,630 USD",
+    budget: "$1,750,000 ",
     description: "Missan implemented the project as a prime contractor, retrofitting 81 accommodation buildings in UNAMI HQ, Baghdad, Green Zone.",
     img: "/assets/images/retrofittingBuildings.png"
   },
@@ -154,7 +179,7 @@ export const mockProjectData: Project[] = [
     {
       id: 12,
       name: "Renovation of Museum",
-      category: "Renovation",
+      category: "Industrial",
       client: "KBR Services",
       size: "",
       budget: "230,000 USD",
@@ -164,7 +189,7 @@ export const mockProjectData: Project[] = [
     {
       id: 13,
       name: "Renovation Of Military Camp",
-      category: "Renovation",
+      category: "Industrial",
       client: "KBR Services",
       size: "Undisclosed",
       budget: "Undisclosed",
@@ -174,9 +199,9 @@ export const mockProjectData: Project[] = [
     {
       id: 14,
       name: "Model Police Station and IED Training Course",
-      category: "Government Facility",
+      category: "Industrial",
       client: "KBR Services",
-      size: "950,000 USD",
+      size: "Undisclosed",
       budget: "950,000 USD",
       description: "Missan was the low bidder and constructed the Model Police Station and the IED (Improvised Explosive Device) training course at the Baghdad Police College. The original design had a major shortcoming with no drainage system. Missan provided a suitable drainage design that was adopted by AFCÊE. The project was completed on budget and on schedule.",
       img: "/assets/images/default.jpg"
@@ -184,15 +209,12 @@ export const mockProjectData: Project[] = [
     {
       id: 15,
       name: "Installation of New CCTV System",
-      category: "Security",
+      category: "Industrial",
       client: "UNAMI and UNHCER",
-      size: "375,000 USD",
+      size: "Undisclosed",
       budget: "375,000 USD",
       description: "Installation of two new CCTV systems for UNAMI villa and workshop in the Green Zone, Baghdad. The project involved providing a high-quality surveillance system for UNAMI HQ and UNAMI Villa.",
       img: "/assets/images/default.jpg"
     },
-
-
-
 
 ];
