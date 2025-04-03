@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: url('../../../assets/images/header-background-image.jpeg') no-repeat center center/cover;
+  background: url('../../../assets/images/headerImage.jpg') no-repeat center center/cover;
   height: 80vh;
   width: 100%;
   color: white;
@@ -19,12 +19,8 @@
 .navbar {
   position: absolute; /* Position the navbar absolutely */
   top: 10px; /* Adjust as needed for vertical spacing */
-  right: 100px; /* Adjust as needed for horizontal spacing */
+  right: 2px; /* Adjust as needed for horizontal spacing */
   z-index: 1000; /* Ensure it appears above other elements */
-}
-
-.nav-link {
-  color: white; /* Change link color if needed */
 }
 
 .navbar-nav {
@@ -34,8 +30,15 @@
   list-style-type: none;
 }
 
-li a {
+.nav-item a {
   text-decoration: none;
+  font-weight: bold; /* Make text bolder */
+  color: white; /* Ensure text is white */
+  transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
 
 .logo {
@@ -93,105 +96,3 @@ li a {
     font-size: 1em;
   }
 }
-/*
-
-!* Navbar Styles *!
-.navbar {
-  position: absolute;
-  top: 10px;
-  right: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  z-index: 1000;
-}
-
-!* Desktop Nav *!
-.desktop-nav {
-  display: flex;
-}
-
-.navbar-nav {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-}
-
-!* Logo *!
-.logo {
-  width: 150px;
-}
-
-!* Hamburger Button *!
-.menu-button {
-  display: none;
-  color: white;
-}
-
-!* Sidebar Styles *!
-.sidenav-container {
-  display: none;
-}
-
-.sidenav {
-  width: 250px;
-  background: #1E2A38;
-  height: 100vh;
-  padding-top: 20px;
-}
-
-.sidenav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.close-button {
-  color: white;
-}
-
-.mobile-menu {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.mobile-menu li {
-  margin: 20px 0;
-}
-
-.mobile-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-!* Responsive: Show Sidebar Button *!
-@media (max-width: 768px) {
-  .menu-button {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .sidenav-container {
-    display: block;
-  }
-}
-*/

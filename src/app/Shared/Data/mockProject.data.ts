@@ -2,53 +2,93 @@ import {Project} from '../Modules/project';
 export const mockProjectData: Project[] = [
   {
     id: 1,
-    name: "Construct Six Presidential Villas, Baghdad",
-    category: "Institutional",
-    client: "Ministry of Foreign Affairs",
-    size: "8,000 m²",
-    budget: "$7,000,000",
+    name: "Construct Ten Presidential Villas, Baghdad",
+    category: "Residential",
+    client: "Tamdeen General Construction and Co",
+    size: "14,000 m²",
+    budget: "$12,000,000",
     description: "This project was a turnkey job to construct a new six presidential villas in IZ/Baghdad with approximately 7,000,000 USD within the period from January 2012 to July 2012, Total buildup area was 8,000 mz with administration building, pump station and electrical station to serve the villas. We are implemented this project as a subcontractor to Tamdeen General Contracting Co",
-    img: "/assets/images/project-home.jpg"
+    img: "/assets/images/villasBaghdad.png"
   },
   {
     id: 2,
-    name: "Construct New Office Building",
-    category: "Institutional",
-    client: "MSB/Sweden (Financed by UNHCR)",
-    size: "Two-story office building",
-    budget: "$1,500,000",
-    description:"This project was to construct a new offices building for UNHCER in HQ/IZ, our task was to supply materials, equipment and labors to build two stories offices building, and it costs 1,500,000 USD within the period from February 2009 to June 2009. We are implemented this project as a prime contractor.",
-    img: "logo.png"
-  },
-  {
-    id: 3,
-    name: "Construction Services for 2x1 Storey Hard Structure Accommodation",
-    category: "Construction",
-    client: "UNAMI",
-    size: "500 m²",
-    budget: "$650,000",
-    description:  "The project is ongoing process This project is to construct a new 2x1 hard structure accommodation buildings (T9& T10) at UNAMI D2 Compound in Baghdad, Iraq. Approximately value is about 650,000 USD within the period from April 2016 to September 2016, Total buildup area is 500 m%.",
-    img: "logo.png"
+    name: "Construction of 100 Bed Hospital in Karbala Province",
+    category: "Healthcare",
+    client: "MOH - Ministry Of Health",
+    size: "",
+    budget: "6,000,000,000 IQD",
+    description: "Missan Company constructed a 100-bed hospital in Karbala Province as a turn-key project, including material supply, manpower, and basic medical equipment.",
+    img: "/assets/images/karbalaHospital.png"
   },
   {
     id: 4,
+    name: "Construction of 1 x 3 Story Hard Structure Offices Building",
+    category: "Commercial",
+    client: "UNAMI",
+    size: "",
+    budget: "6,500,000 USD",
+    description: "Construction of a 3-story hard structure accommodation building for UNAMI in the Green Zone, Baghdad. The project included site preparation, excavation, foundation, structural steel work, mechanical and electrical installations, and finishing.",
+    img: "/assets/images/hardStructureBuilding.png"
+  },
+  {
+    id: 3,
+    name: "Installation of Water Intake",
+    category: "Industrial",
+    client: "Al-Rasheed Company and Ministry of Industry",
+    size: "",
+    budget: "1,000,000,000 IQD",
+    description: "Design and installation of a water intake system for Missan Gas Turbine Station, including mechanical and electrical design for the power station.",
+    img: "/assets/images/waterpump.png"
+  },
+  {
+    id: 16,
+    name: "Retrofitting of 81 Accommodation Buildings",
+    category: "Infrastructure",
+    client: "UNAMI",
+    size: "",
+    budget: "1,759,630 USD",
+    description: "Missan implemented the project as a prime contractor, retrofitting 81 accommodation buildings in UNAMI HQ, Baghdad, Green Zone.",
+    img: "/assets/images/retrofittingBuildings.png"
+  },
+  {
+    id: 18,
+    name: "Construct New Office Building",
+    category: "Commercial",
+    client: "KBR",
+    size: "6300 m²",
+    budget: "$1,500,000",
+    description:"This project was to construct a new offices building for UNHCER in HQ/IZ, our task was to supply materials, equipment and labors to build two stories offices building, and it costs 1,500,000 USD within the period from February 2009 to June 2009. We are implemented this project as a prime contractor.",
+    img: "/assets/images/default.jpg"
+  },
+  {
+    id: 17,
+    name: "Construction Services for 2x1 Storey Hard Structure Accommodation",
+    category: "Commercial",
+    client: "MSB",
+    size: "Undisclosed",
+    budget: "$1,500,000",
+    description:  "The project is ongoing process This project is to construct a new 2x1 hard structure accommodation buildings (T9& T10) at UNAMI D2 Compound in Baghdad, Iraq. Approximately value is about 650,000 USD within the period from April 2016 to September 2016, Total buildup area is 500 m%.",
+    img: "/assets/images/default.jpg"
+  },
+  {
+    id: 19,
     name: "Leadership Reaction & Obstacle Course",
-    category: "Residential",
+    category: "Industrial",
     client: "Laguna Construction Company Inc.",
     size: "Training facility",
     budget: "Undisclosed",
     description: "This project included executing concrete LRC & Obstacle Course in the Iraqi Military Academy in Ar-Rustamiyal. These two projects are mainly consisting of concrete & Masonry work. The intent of this project was to prepare training courses similar to what is in the Military academy in UK.",
-    img: "logo.png"
+    img: "/assets/images/default.jpg"
   },
   {
     id: 5,
     name: "Installing T-Wall Work",
-    category: "Institutional",
+    category: "Industrial",
     client: "Joint Contracting Command - Iraq (JCC-I) & PCO",
     size: "Security barriers",
     budget: "Undisclosed",
     description: "We had two projects included providing & installing T-Wall concrete to increase the security situation of the Iraqi Police Office and to increase the security at the Red Dragon gate in Al Adnan palace. We are implemented this project as a prime contractor.",
-    img: "logo.png"
+    img: "/assets/images/default.jpg"
   },
   {
     id: 6,
@@ -58,87 +98,101 @@ export const mockProjectData: Project[] = [
     size: "750 m²",
     budget: "Undisclosed",
     description:  "These sites in green zone, structures mainly contain steel columns, I sec. angles and corrugated single sheets ((one for storage area in front of RSO. building (KBR), the second covering technical container somewhere inside green zone)).The total area was about (750 mª)",
-    img: "logo.png"
+    img: "/assets/images/default.jpg"
   },
   {
     id: 7,
     name: "Renovation Of Diwan Facility",
-    category: "Institutional",
+    category: "Commercial",
     client: "U.S. Army Corps of Engineers",
     size: "Multi-use facility",
     budget: "Undisclosed",
     description:  "This building is occupied now by United Nations / green zone. This building consist of six parts, the first, second, third parts of it are the management offices, conference, sleeping rooms and groups of bathrooms. The forth represent restraint which contains two large halls, central group of bathrooms and offices for management. The fifth one works as an auditorium with capacity of 400 people. The sixth part was to install a communication tower with height of (30 m). The foundation of it had dimension (7.5 *7.5 * 0.5) also had two exterior plat forms at levels (23, 28 m). This steel structure designed and built by our company and all parts of it manufactured by our self in Iraq",
-    img: "logo.png"
+    img: "/assets/images/default.jpg"
   },
   {
     id: 8,
     name: "Renovation Of Fire Station Building",
-    category: "Institutional",
+    category: "Industrial",
     client: "KBR",
-    size: "650 m2",
+    size: "200 m²",
     budget: "Undisclosed",
-    description:  "The area about (650 m2) the job contained removing the old asbestos sheets with all safety requirements need and change it by using sandwich panels (5 cm.) thickness. Also removing old doors and installing new electrical rolling doors, casting the floor to have good slope to drain water and building new partitions to make offices with new electrical, plumbing, fire alarm system and new air conditioning equipments.",
-    img: "logo.png"
+    description:  "The area is about (200 m²), and the work included removing asbestos sheets and replacing sandwich panel instead, in addition to new concrete floor with new electrical systems",
+    img: "/assets/images/default.jpg"
   },
   {
     id: 9,
     name: " Renovation Of O&M Offices ",
-    category: "Institutional",
+    category: "Commercial",
     client: "KBR",
     size: "650 m²",
     budget: "Undisclosed",
-    description: "The area of project is about (650 m*) and this project includes (8 buildings) each one had been renovated by changing or removing old plastering. electrical, plumbing system, doors, windows, tiles, the work consist of removing one of 8-buildings perfectly and re build it again using bearing walls made of bricks and reinforced conc. slab with 20 cm thickness.",
-    img: "logo.png"
+    description: "The area of project is about (650 m²) and this project includes (8 buildings) each one had been renovated by changing or removing old plastering. electrical, plumbing system, doors, windows, tiles, the work consist of removing one of 8-buildings perfectly and re build it again using bearing walls made of bricks and reinforced conc. slab with 20 cm thickness.",
+    img: "/assets/images/default.jpg"
   },
   {
     id: 10,
     name: "Construct and Install Sewer Network",
-    category: "Infrastructure",
-    client: "USACE, Mayoralty of Baghdad",
+    category: "Industrial",
+    client: "US Army Corp pf Engineers",
     size: "Undisclosed",
-    budget: "$1,526,120",
+    budget: "$5,700,000",
     description: "This project was to construct and install new sewer network in Baghdad, Al-Zafranyah District, Mahala 960 this work included supplying materials, equipment and labors using UPVC pipes and fittings in various depths started from (1-2) meter to (5-6) meter including As, BS and BD manholes, the network connected with all houses in this district. Cost of this project was 533,522 USD for the period between February 2006 and February 2007. We are implemented this project as a prime contractor.",
-    img: "logo.png"
+    img: "/assets/images/default.jpg"
   },
+
   {
     id: 11,
-    name: "Construct and Install Sewer Network in Mahla 960, Baghdad",
-    category: "Infrastructure",
-    client: "USACE, Mayoralty of Baghdad",
-    size: "Undisclosed",
-    budget: "$533,522",
-    description: "This project was to construct and install new sewer network in Baghdad, Al-Zafranyah District, Mahala 960 this work included supplying materials, equipment and labors using UPVC pipes and fittings in various depths started from (1-2) meter to (5-6) meter including As, BS and BD manholes, the network connected with all houses in this district. Cost of this project was 533,522 USD for the period between February 2006 and February 2007. We are implemented this project as a prime contractor.",
-    img: "logo.png"
-  },
-  {
-    id: 12,
     name: "Construct and Install Pump Station",
-    category: "Infrastructure",
-    client: "USACE, Mayoralty of Baghdad",
-    size: "Undisclosed",
-    budget: "Undisclosed",
+    category: "Industrial",
+    client: "Al Rasheed Company and Ministry of Industry",
+    size: "",
+    budget: "$3,500,000",
     description: "This project involved constructing a pump station for sewage and wastewater management in Baghdad, including excavation, pumps, and pipe networks.",
-    img: "logo.png"
+    img: "/assets/images/waterIntake.png"
   },
-  {
-    id: 13,
-    name: "Renovation Of Fire Station Garage In The US Embassy",
-    category: "Infrastructure",
-    client: "KBR",
-    size: "200 m²",
-    budget: "Undisclosed",
-    description: "The area is about (200 m'), and the work included removing asbestos sheets and replacing sandwich panel instead, in addition to new concrete floor with new electrical systems",
-    img: "logo.png"
-  },
-  {
-    id: 14,
-    name: "Hazmat Building Renovation",
-    category: "Infrastructure",
-    client: "KBR",
-    size: "220 m²",
-    budget: "Undisclosed",
-    description: "This building has an area about (220 m2) with height of (5.5m). The requirement said to install new steel mezzanine for storage Hazardous materials and we had done it by using steel circular columns, angles and I sec. And cover it by plywood. The work also included installing new western design sys, new partitions, and new electrical and air conditioning sys.",
-    img: "logo.png"
-  }
+    {
+      id: 12,
+      name: "Renovation of Museum",
+      category: "Renovation",
+      client: "KBR Services",
+      size: "",
+      budget: "230,000 USD",
+      description: "Missan was awarded the $230,000 renovation of the 1,100 square meter Museum. The Academy opened on schedule, welcoming its first class of cadets on 2 October 2004.",
+      img: "/assets/images/default.jpg"
+    },
+    {
+      id: 13,
+      name: "Renovation Of Military Camp",
+      category: "Renovation",
+      client: "KBR Services",
+      size: "Undisclosed",
+      budget: "Undisclosed",
+      description: "The work consisted of renovating old buildings, reconstructing a small mechanical room, replacing old doors and windows with new aluminum sections, and upgrading the electrical and plumbing systems with new methods. The project also included installing a new pump station with a capacity of 10,000 liters and making new partitions.",
+      img: "/assets/images/default.jpg"
+    },
+    {
+      id: 14,
+      name: "Model Police Station and IED Training Course",
+      category: "Government Facility",
+      client: "KBR Services",
+      size: "950,000 USD",
+      budget: "950,000 USD",
+      description: "Missan was the low bidder and constructed the Model Police Station and the IED (Improvised Explosive Device) training course at the Baghdad Police College. The original design had a major shortcoming with no drainage system. Missan provided a suitable drainage design that was adopted by AFCÊE. The project was completed on budget and on schedule.",
+      img: "/assets/images/default.jpg"
+    },
+    {
+      id: 15,
+      name: "Installation of New CCTV System",
+      category: "Security",
+      client: "UNAMI and UNHCER",
+      size: "375,000 USD",
+      budget: "375,000 USD",
+      description: "Installation of two new CCTV systems for UNAMI villa and workshop in the Green Zone, Baghdad. The project involved providing a high-quality surveillance system for UNAMI HQ and UNAMI Villa.",
+      img: "/assets/images/default.jpg"
+    },
+
+
+
 
 ];
