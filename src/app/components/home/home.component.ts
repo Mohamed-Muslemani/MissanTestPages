@@ -6,6 +6,7 @@ import { RouterOutlet} from '@angular/router';
 import {AboutSectionHomeComponent} from '../about-section-home/about-section-home.component';
 import {ServiceSectionHomeComponent} from "../service-section-home/service-section-home.component";
 import {ProjectSectionHomeComponent} from "../project-section-home/project-section-home.component";
+import {StatsComponent} from '../stats/stats.component';
 @Component({
   selector: 'app-home',
   imports: [
@@ -14,7 +15,8 @@ import {ProjectSectionHomeComponent} from "../project-section-home/project-secti
     RouterOutlet,
     AboutSectionHomeComponent,
     ServiceSectionHomeComponent,
-    ProjectSectionHomeComponent
+    ProjectSectionHomeComponent,
+    StatsComponent
   ],
   templateUrl: './home.component.html',
   standalone: true,

@@ -1,0 +1,33 @@
+.stats-section {
+  .stats-bg {
+    background-color: #66c4f1; // Light blue
+    color: white;
+  }
+
+  .stats-bg-image {
+    background-color: #4d96b8; // Light blue
+    //background: url('/assets/images/serviceImage1.png') center center/cover no-repeat;
+    color: white;
+  }
+
+  .stat-item {
+    h3 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .underline {
+      width: 60px;
+      height: 2px;
+      background-color: white;
+      margin: 0 auto;
+    }
+  }
+}

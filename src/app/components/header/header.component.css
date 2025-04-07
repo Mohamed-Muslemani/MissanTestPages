@@ -61,38 +61,96 @@
   max-width: 85%;
 }
 
-@media (max-width: 564px) {
-  .content-box {
-    padding: 1em;
-    width: 80%; /* Adjust width as per requirement */
-    max-width: 80%;
+/* Collapse menu styles */
+.navbar-collapse {
+  display: none;
+
+  &.show {
+    display: block;
+    position: absolute;
+    top: 60px;
+  / / below the hamburger right: 10 px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    padding: 10px 20px;
+    min-width: 200px;
+
+    .nav-item a {
+      display: block;
+      color: #333 !important;
+      padding: 8px 0;
+    }
+
+    .nav-item a:hover {
+      color: #00a3e0 !important;
+      text-decoration: none;
+    }
+  }
+
+  @media (min-width: 992px) {
+    display: flex !important; // show links as normal in large screens
+  position: static;
+    background: none;
+    box-shadow: none;
+    padding: 0;
   }
 
   .navbar-toggler {
-    display: block; /* Show hamburger menu icon on small screens */
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
+
+    .navbar-toggler-icon {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
-  .navbar-collapse {
-    display: none; /* Hide the navbar items by default on small screens */
+
+  @media (max-width: 564px) {
+    .content-box {
+      padding: 1em;
+      width: 80%; /* Adjust width as per requirement */
+      max-width: 80%;
+    }
+
+    .navbar-toggler {
+      display: block; /* Show hamburger menu icon on small screens */
+    }
+
+    .navbar-collapse {
+      display: none; /* Hide the navbar items by default on small screens */
+    }
+
+    .navbar-collapse.collapse.show {
+      display: block; /* Display the navbar items when the menu is toggled */
+    }
+
+    .navbar-nav {
+      flex-direction: column; /* Stack navbar items vertically */
+      text-align: center; /* Center the items */
+      width: 100%; /* Full width for the navbar items */
+    }
+
+    .nav-item {
+      margin-bottom: 1em; /* Add space between items */
+    }
   }
 
-  .navbar-collapse.collapse.show {
-    display: block; /* Display the navbar items when the menu is toggled */
-  }
-
-  .navbar-nav {
-    flex-direction: column; /* Stack navbar items vertically */
-    text-align: center; /* Center the items */
-    width: 100%; /* Full width for the navbar items */
-  }
-
-  .nav-item {
-    margin-bottom: 1em; /* Add space between items */
-  }
-}
-
-@media (max-width: 282px) {
-  h2{
-    font-size: 1em;
+  @media (max-width: 282px) {
+    h2 {
+      font-size: 1em;
+    }
   }
 }
