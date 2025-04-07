@@ -1,12 +1,39 @@
+<app-header></app-header>
+
+<title>{{ project.name }}</title>
+
 <div class="container mt-5" *ngIf="project">
-  <div class="card">
-    <img [src]="project.img" class="card-img-top" alt="Project Image">
-    <div class="card-body">
-      <h2 class="card-title">{{ project.name }}</h2>
-      <h5 class="card-subtitle mb-2 text-muted">{{ project.category }}</h5>
-      <p class="card-text">{{ project.description }}</p>
-      <a routerLink="/" class="btn btn-primary">Back to Projects</a>
+  <div class="header">
+    <h1>{{ project.name }}</h1>
+  </div>
+  <div class="details">
+    <div>
+      <strong>CLIENT</strong><br>
+      {{ project.client || 'N/A' }}
+    </div>
+    <div>
+      <strong>BUDGET</strong><br>
+      {{ project.budget || 'N/A' }}
+    </div>
+    <div>
+      <strong>SIZE</strong><br>
+      {{ project.size || 'N/A' }}
+    </div>
+    <div>
+      <strong>SECTOR(S)</strong><br>
+      {{ project.category }}
     </div>
   </div>
-</div>
 
+   <div class="project-container">
+    <!-- Image with fixed size -->
+     <img [src]="project.img" class="card-img-top" alt="Project Image">
+
+     <p>{{ project.description }}</p>
+
+
+  <a routerLink="/" class="btn btn-primary mt-3">Back to Projects</a>
+</div>
+  </div>
+
+<app-footer></app-footer>
