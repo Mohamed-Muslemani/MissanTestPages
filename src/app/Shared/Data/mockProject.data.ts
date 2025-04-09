@@ -3,7 +3,7 @@ export const mockProjectData: Project[] = [
 
   {
     id: 20,
-    name: "Addat Baghdad",
+    name: "Jaddat Baghdad",
     category: "Residential",
     client: "Al Arife Trading Group",
     size: "1,000,000 m²",
@@ -92,7 +92,7 @@ export const mockProjectData: Project[] = [
     client: "MSB",
     size: "Undisclosed",
     budget: "$1,500,000",
-    description:  "The project is ongoing process This project is to construct a new 2x1 hard structure accommodation buildings (T9& T10) at UNAMI D2 Compound in Baghdad, Iraq. Approximately value is about 650,000 USD within the period from April 2016 to September 2016, Total buildup area is 500 m%.",
+    description:  "The project is ongoing process This project is to construct a new 2x1 hard structure accommodation buildings (T9& T10) at UNAMI D2 Compound in Baghdad, Iraq. Approximately value is about 650,000 USD within the period from April 2016 to September 2016, Total buildup area is 500 m².",
     img: "/assets/images/default.jpg"
   },
   {

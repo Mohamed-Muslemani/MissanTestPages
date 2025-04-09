@@ -52,3 +52,40 @@
    border-radius: 8px; /* Optional: Adds rounded corners */
  }
 
+ .project-container {
+   max-width: 800px;
+   margin: 40px auto;
+   padding: 30px;
+   background-color: #ffffff;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+   border-radius: 16px;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .project-container img.card-img-top {
+   width: 100%;
+   height: auto;
+   max-height: 400px;
+   object-fit: cover;
+   border-radius: 12px;
+   margin-bottom: 20px;
+ }
+
+ .project-container p {
+   font-size: 1.1rem;
+   color: #333;
+   line-height: 1.6;
+   margin-bottom: 30px;
+ }
+
+ .project-container .btn-primary {
+   padding: 10px 24px;
+   font-size: 1rem;
+   border-radius: 8px;
+   transition: background-color 0.3s ease;
+ }
+
+ .project-container .btn-primary:hover {
+   background-color: #0056b3;
+ }
