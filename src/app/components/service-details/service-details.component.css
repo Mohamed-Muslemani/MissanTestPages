@@ -14,6 +14,15 @@
   margin: auto;
 }
 
+.service-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Heading Styles */
 h3.mt-5 {
   font-size: 2rem;

@@ -12,7 +12,10 @@
         <p class="service-description">
           {{ service.description }}
         </p>
-        <a [routerLink]="['/services', service.id]" class="view-more fw-bold text-decoration-none">VIEW MORE</a>
+        <div class="view-more-container">
+          <a [routerLink]="['/services', service.id]" class="view-more fw-bold text-decoration-none">VIEW MORE</a>
+          <span class="arrow">➔</span>
+        </div>
       </div>
 
       <!-- Right Section: Image -->

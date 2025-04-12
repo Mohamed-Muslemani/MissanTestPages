@@ -44,8 +44,10 @@ h2 {
 .service-img {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  height: 250px;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .reverse-layout {
