@@ -47,6 +47,7 @@
   left: 20px;
   width: 180px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .content-box {
