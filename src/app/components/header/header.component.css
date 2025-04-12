@@ -69,7 +69,7 @@
     display: block;
     position: absolute;
     top: 60px;
-  / / below the hamburger right: 10 px;
+  /*/ / below the hamburger right: 10 px;*/
     background: white;
     border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -90,8 +90,9 @@
   }
 
   @media (min-width: 992px) {
-    display: flex !important; // show links as normal in large screens
-  position: static;
+    display: flex !important;
+  /*// show links as normal in large screens*/
+    position: static;
     background: none;
     box-shadow: none;
     padding: 0;

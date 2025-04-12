@@ -1,46 +1,63 @@
-
 .about-section {
   display: flex;
-  align-items: stretch;
-  width: 100%;
-  position: relative;
+  flex-direction: row;
   background-color: #f8f9fc;
   overflow: hidden;
+  width: 100%;
+  height: 750px;
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto; // Allow stacking on mobile
+  }
 }
 
 .left-side-content {
   flex: 1;
-  position: relative;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
-}
 
-.left-side-content img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  @media (max-width: 768px) {
+    clip-path: none;
+    height: 200px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
 
 .right-side-content {
-  flex: 1; /* Takes up the remaining space */
-  background-color: #f8f9fc;
-  padding: 40px;
-  position: relative;
-  z-index: 2;
+  flex: 1;
+  padding: 30px; // Reduced padding
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Distributes content evenly */
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
-.slanted-divider {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1px;
-  background-color: #102c57;
-  transform: skewX(-20deg);
-  z-index: 3;
+.view-more-container {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+  margin-top: 20px; /* Add some space above */
 }
 
+.view-more {
+  margin-right: 10px; /* Space between the link and the arrow */
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color (customize as needed) */
+  font-weight: bold; /* Make the text bold */
+}
+
+.arrow {
+  font-size: 24px; /* Adjust size as needed */
+  color: #007bff; /* Match the link color or customize */
+}

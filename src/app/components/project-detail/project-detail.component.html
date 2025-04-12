@@ -29,7 +29,9 @@
     <!-- Image with fixed size -->
      <img [src]="project.img" class="card-img-top" alt="Project Image">
 
-     <p>{{ project.description }}</p>
+     <div class="project-description-box">
+       <p>{{ project.description }}</p>
+     </div>
 
 
   <a routerLink="/" class="btn btn-primary mt-3">Back to Projects</a>
