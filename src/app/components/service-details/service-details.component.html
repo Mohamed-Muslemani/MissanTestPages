@@ -1,18 +1,21 @@
 
 <app-header></app-header>
 <div class="container-fluid service-details">
-  <!-- Selected Service Details -->
-  <h2 class="section-title text-center">{{ selectedService?.title }}</h2>
-  <div class="title-underline mx-auto"></div>
+  <!-- Title Bar -->
+  <div class="service-header">
+    <h1 class="service-title text-white text-center">{{ selectedService?.title }}</h1>
+  </div>
 
-  <!-- Display the selected service details -->
+  <!-- Image and Description -->
   <div class="row mt-4 justify-content-center">
     <div class="selected-service-img col-12 text-center">
-      <img [src]="selectedService?.image" [alt]="selectedService?.title" class="img-fluid rounded">
+      <img [src]="selectedService?.image" [alt]="selectedService?.title" class="img-fluid rounded service-hero-img">
     </div>
 
     <div class="col-lg-8 col-md-12 col-12">
-      <p class="service-description">{{ selectedService?.description }}</p>
+      <div class="service-description-box">
+        <p class="service-description">{{ selectedService?.description }}</p>
+      </div>
     </div>
   </div>
 
