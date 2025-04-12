@@ -5,7 +5,35 @@
     <span class="highlight">MISSAN Engineering Group</span> is a relationship-based company, meaning that we focus on developing and maintaining long-term relationships with all of our business partners. We are non-adversarial, non-claims oriented and flexible in how we approach construction.
   </p>
 
-  <img src="assets/images/WareHouse.jpeg" class="img-fluid mb-4" alt="Company Image" />
+  <!-- Desktop View: Side-by-Side Images -->
+  <div class="row justify-content-center mb-4 d-none d-md-flex">
+    <div class="col-md-5 d-flex justify-content-center me-md-4">
+      <img src="assets/images/WorkersPipes.jpeg" class="img-fluid" alt="Company Image 1" />
+    </div>
+    <div class="col-md-5 d-flex justify-content-center">
+      <img src="assets/images/WareHouse.jpeg" class="img-fluid" alt="Company Image 2" />
+    </div>
+  </div>
+
+  <!-- Mobile View: Carousel -->
+  <div id="imageCarousel" class="carousel slide d-md-none mb-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/WorkersPipes.jpeg" class="d-block w-100" alt="Company Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/WareHouse.jpeg" class="d-block w-100" alt="Company Image 2">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   <div class="row g-4">
     <div class="col-md-4">

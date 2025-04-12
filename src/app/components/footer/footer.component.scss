@@ -75,6 +75,7 @@ footer ul.list-inline a:hover {
   footer .row {
     flex-direction: column;
     text-align: center;
+    margin: 0 auto;
   }
 
   footer .col-md-3 {
@@ -84,4 +85,5 @@ footer ul.list-inline a:hover {
   footer ul.list-inline {
     justify-content: center;
   }
+
 }

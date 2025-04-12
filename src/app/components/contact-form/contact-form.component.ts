@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { NgIf } from '@angular/common';
-import {HeaderComponent} from '../header/header.component';
-import {FooterComponent} from '../footer/footer.component';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 interface ContactFormData {
   firstName: string;
@@ -24,6 +24,7 @@ interface ContactFormData {
 export class ContactFormComponent {
   contactForm: FormGroup;
   isSubmitting = false;
+  hasSubmitted = false;
   successMessage = '';
   errorMessage = '';
 
@@ -39,6 +40,8 @@ export class ContactFormComponent {
   }
 
   onSubmit() {
+    this.hasSubmitted = true;
+
     if (this.contactForm.valid) {
       this.isSubmitting = true;
       this.successMessage = '';
@@ -50,6 +53,7 @@ export class ContactFormComponent {
         next: (response) => {
           this.successMessage = response.message;
           this.contactForm.reset();
+          this.hasSubmitted = false;
           setTimeout(() => (this.successMessage = ''), 5000);
         },
         error: (error) => {
