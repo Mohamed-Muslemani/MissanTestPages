@@ -1,0 +1,89 @@
+
+/* Footer Styling */
+footer {
+  background-color: #1E2D3B !important; /* Primary blue background */
+  color: white;
+  padding: 50px 0;
+  margin-top: auto; /* Push footer to the bottom */
+  min-height: 60vh; /* Makes the footer take up more than half the page */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+}
+
+/* Center container */
+footer .container {
+  max-width: 1200px;
+}
+
+/* Flexbox layout for footer sections */
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Footer columns */
+footer .col-md-3 {
+  flex: 1;
+  min-width: 250px; /* Prevents collapsing on smaller screens */
+}
+
+/* Footer headings */
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Footer paragraphs */
+footer p {
+  margin-bottom: 5px;
+}
+
+/* Footer lists */
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Quick links in a single row */
+footer ul.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between links */
+}
+
+/* Style list items */
+footer ul.list-inline li {
+  display: inline;
+}
+
+/* Style footer links */
+footer ul.list-inline a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer ul.list-inline a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  footer .col-md-3 {
+    margin-bottom: 20px;
+  }
+
+  footer ul.list-inline {
+    justify-content: center;
+  }
+
+}

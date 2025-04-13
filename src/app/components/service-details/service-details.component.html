@@ -1,0 +1,47 @@
+
+<app-header></app-header>
+<div class="container-fluid service-details">
+  <!-- Title Bar -->
+  <div class="service-header">
+    <h1 class="service-title text-white text-center">{{ selectedService?.title }}</h1>
+  </div>
+
+  <!-- Image and Description -->
+  <div class="row mt-4 justify-content-center">
+    <div class="selected-service-img col-12 text-center">
+      <img [src]="selectedService?.image" [alt]="selectedService?.title" class="img-fluid rounded service-hero-img">
+    </div>
+
+    <div class="col-lg-8 col-md-12 col-12">
+      <div class="service-description-box">
+        <p class="service-description">{{ selectedService?.description }}</p>
+      </div>
+    </div>
+  </div>
+
+
+<h3 class="mt-5">More Services</h3>
+  <div class="row d-flex mt-4">
+    <div *ngFor="let service of filteredServices; let i = index; let last = last">
+      <div [ngClass]="{'flex-row-reverse': i % 2 !== 0}" class="row align-items-center">
+        <!-- Left Side: Text Content -->
+        <div class="col-lg-6 col-md-7 col-12 service-text-content">
+          <h4 class="service-text fw-bold">{{ service.title }}</h4>
+          <p class="service-description">{{ service.description }}</p>
+          <a (click)="navigateToService(service.id)" class="view-more fw-bold text-decoration-none">
+            VIEW MORE
+          </a>
+        </div>
+        <!-- Right Side: Image -->
+        <div class="col-lg-6 col-md-5 col-12 text-center service-img-content">
+          <img [src]="service.image" [alt]="service.title" class="img-fluid rounded service-img">
+        </div>
+      </div>
+      <!-- Show <hr> only if it's NOT the last service -->
+      <hr *ngIf="!last">
+    </div>
+  </div>
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,109 @@
+ body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.details div {
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+ .btn {
+   margin-bottom: 20px; /* Adjust as needed */
+ }
+
+.social-icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #3f51b5;
+}
+ .project-image {
+   display: block;
+   max-width: 100%; /* Adjust this percentage to control the size */
+   height: auto;
+   margin: 20px auto; /* Centers the image */
+   border-radius: 8px; /* Optional: Adds rounded corners */
+ }
+
+ .project-container {
+   max-width: 800px;
+   margin: 40px auto;
+   padding: 30px;
+   background-color: #ffffff;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+   border-radius: 16px;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .project-container img.card-img-top {
+   width: 100%;
+   height: auto;
+   max-height: 400px;
+   object-fit: cover;
+   border-radius: 12px;
+   margin-bottom: 20px;
+ }
+
+ .project-container p {
+   font-size: 1.1rem;
+   color: #333;
+   line-height: 1.6;
+   margin-bottom: 30px;
+ }
+
+ .project-container .btn-primary {
+   padding: 10px 24px;
+   font-size: 1rem;
+   border-radius: 8px;
+   transition: background-color 0.3s ease;
+ }
+
+ .project-container .btn-primary:hover {
+   background-color: #0056b3;
+ }
+
+//  .project-description-box {
+//    background-color: #ffffff;
+//    border: 1px solid #ddd;
+//    padding: 20px;
+//    border-radius: 8px;
+//    margin-top: 5px;
+//    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+//    p {
+//      margin: 0;
+//      font-size: 1rem;
+//      line-height: 1.6;
+//      color: #333;
+//    }
+//  }
+
+

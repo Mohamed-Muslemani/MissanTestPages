@@ -1,0 +1,105 @@
+.services-section1 {
+  width: 90%; /* Make it more adaptive */
+  max-width: 1200px; /* Prevents extreme stretching */
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.title-underline {
+  width: 5rem;
+  height: 0.3rem;
+  background-color: #EDCB62;
+  margin: 0.5rem auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* Provides spacing instead of fixed margins */
+  margin-bottom: 3rem; /* Space between service sections */
+}
+
+.service-text-content, .service-img-content {
+  flex: 1; /* Allows flexible scaling instead of fixed width */
+}
+
+.service-text-content {
+  text-align: left;
+}
+
+.view-more-container {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+  margin-top: 20px; /* Add some space above */
+
+}
+
+.view-more {
+  margin-right: 10px; /* Space between the link and the arrow */
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color (customize as needed) */
+  font-weight: bold; /* Make the text bold */
+}
+
+.arrow {
+  font-size: 24px; /* Adjust size as needed */
+  color: #007bff; /* Match the link color or customize */
+}
+
+.service-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reverse-layout {
+  flex-direction: row-reverse; /* Ensures alternate layouts */
+}
+
+.service-img-content {
+  text-align: right;
+}
+
+.reverse-layout .service-img-content {
+  text-align: left;
+}
+
+
+/* 🌟 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column !important;
+    gap: 1.5rem; /* Adjust spacing for small screens */
+  }
+  .reverse-layout {
+    flex-direction: column; /* Ensures alternate layouts */
+  }
+
+  /* Force image to be on top */
+  .service-img-content {
+    margin-top: 5px;
+    order: -1; /* Moves image above text */
+  }
+
+
+  .service-text-content {
+    text-align: left;
+  }
+
+  .service-img {
+    max-width: 100%;
+  }
+
+}

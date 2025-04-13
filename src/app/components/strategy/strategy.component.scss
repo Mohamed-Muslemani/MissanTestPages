@@ -1,0 +1,55 @@
+.strategy-section {
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003057;
+  }
+
+  .sub-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+    &::after {
+      content: '';
+      width: 40px;
+      height: 4px;
+      background-color: #00a3e0;
+      display: block;
+      margin: 0.5rem auto 0;
+    }
+  }
+
+  .strategy-left {
+    background-color: #e3f4fd;
+    border-radius: 8px;
+
+    div {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+
+      span {
+        display: block;
+        font-weight: 400;
+        font-size: 0.9rem;
+        color: #333;
+      }
+    }
+
+    hr {
+      border-top: 1px solid #ccc;
+    }
+  }
+
+  .sub-heading {
+    font-size: 1.1rem;
+    color: #003057;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+  }
+}

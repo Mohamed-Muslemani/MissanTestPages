@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<title>{{ project.name }}</title>
+
+<div class="container mt-5" *ngIf="project">
+  <div class="header">
+    <h1>{{ project.name }}</h1>
+  </div>
+  <div class="details">
+    <div>
+      <strong>CLIENT</strong><br>
+      {{ project.client || 'N/A' }}
+    </div>
+    <div>
+      <strong>BUDGET</strong><br>
+      {{ project.budget || 'N/A' }}
+    </div>
+    <div>
+      <strong>SIZE</strong><br>
+      {{ project.size || 'N/A' }}
+    </div>
+    <div>
+      <strong>SECTOR(S)</strong><br>
+      {{ project.category }}
+    </div>
+  </div>
+
+   <div class="project-container">
+    <!-- Image with fixed size -->
+     <img [src]="project.img" class="card-img-top" alt="Project Image">
+
+     <div class="project-description-box">
+       <p>{{ project.description }}</p>
+     </div>
+
+
+  <a routerLink="/" class="btn btn-primary mt-3">Back to Projects</a>
+</div>
+  </div>
+
+<app-footer></app-footer>
