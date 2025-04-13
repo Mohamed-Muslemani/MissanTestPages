@@ -73,6 +73,10 @@ h3.mt-5 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.moreService {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .service-text-content,
   .service-img-content {
