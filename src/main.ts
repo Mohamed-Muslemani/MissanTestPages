@@ -11,6 +11,7 @@ import { ProjectComponent } from './app/components/project/project.component';
 import { ContactFormComponent } from './app/components/contact-form/contact-form.component';
 import { ProjectDetailComponent } from './app/components/project-detail/project-detail.component';
 import { AboutComponent } from './app/components/about/about.component';
+import {NotFoundComponent} from './app/components/not-found/not-found.component';
 
 const routes: Routes = [
   // Redirect root to home
@@ -24,8 +25,9 @@ const routes: Routes = [
   { path: 'project/:id', component: ProjectDetailComponent },
   { path: 'contact', component: ContactFormComponent },
   { path: 'about-section-home', component: AboutComponent },
+  { path: 'not-found', component: NotFoundComponent },
   // Catch-all route
-  { path: '**', redirectTo: '/services' }
+  { path: '**', redirectTo: '/not-found' }
 ];
 
 bootstrapApplication(AppComponent, {
