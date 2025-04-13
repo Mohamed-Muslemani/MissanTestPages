@@ -30,5 +30,6 @@ export const SERVICES_DETAILS = [
       'Our seasoned project managers, engineers, and supervisors handle everything from timeline development and cost tracking to contractor coordination, site safety, and quality inspections. We also specialize in managing MEP (Mechanical, Electrical, Plumbing) systems, ensuring seamless integration and functionality.\n' +
       '\n' +
       'By combining technical know-how with proactive leadership, we deliver projects that meet the highest industry standards. With Missan Engineering Group at the helm, you gain a trusted partner committed to precision, accountability, and long-term value.'
+
   }
 ];

@@ -36,16 +36,32 @@ h2 {
   text-align: left;
 }
 
+.view-more-container {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+  margin-top: 20px; /* Add some space above */
+
+}
+
 .view-more {
-  display: inline-block;
-  margin-top: 1rem;
+  margin-right: 10px; /* Space between the link and the arrow */
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color (customize as needed) */
+  font-weight: bold; /* Make the text bold */
+}
+
+.arrow {
+  font-size: 24px; /* Adjust size as needed */
+  color: #007bff; /* Match the link color or customize */
 }
 
 .service-img {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  height: 250px;
   object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .reverse-layout {
@@ -59,6 +75,7 @@ h2 {
 .reverse-layout .service-img-content {
   text-align: left;
 }
+
 
 /* 🌟 RESPONSIVE DESIGN */
 @media (max-width: 768px) {
@@ -84,4 +101,5 @@ h2 {
   .service-img {
     max-width: 100%;
   }
+
 }

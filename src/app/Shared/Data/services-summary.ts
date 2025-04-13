@@ -18,5 +18,6 @@ export const SERVICES_SUMMARY = [
     title: 'Professional Construction Management You Can Trust',
     image: 'assets/images/hardStructureBuilding.png',
     description: 'Our expert team ensures every detail is handled—safely, efficiently, and to the highest standards—turning complexity into successful outcomes.'
+
   }
 ];

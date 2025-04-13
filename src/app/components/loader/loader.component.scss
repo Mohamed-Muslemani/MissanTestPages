@@ -1,4 +1,4 @@
-$cyan: #F0F0F0   ;
+$cyan: #F0F0F0;
 $tiles: 5;
 
 body {
@@ -54,8 +54,10 @@ body {
 
   //Scale
   .spinner-icon {
-
     animation: scale 2s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
   }
 
   @keyframes scale {

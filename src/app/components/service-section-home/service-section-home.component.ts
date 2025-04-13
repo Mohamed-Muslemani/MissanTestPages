@@ -5,12 +5,12 @@ import {SERVICES_SUMMARY} from '../../Shared/Data/services-summary';
 
 @Component({
   selector: 'app-service-section-home',
-  imports: [
-    NgForOf,
-    NgClass,
-    RouterLink,
-    NgIf,
-  ],
+    imports: [
+        NgForOf,
+        NgClass,
+        RouterLink,
+        NgIf,
+    ],
   templateUrl: './service-section-home.component.html',
   standalone: true,
   styleUrl: './service-section-home.component.css'
